@@ -1,0 +1,975 @@
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  background-image: url('https://stonepedia.in/wp-content/uploads/2024/11/Screenshot-2024-11-23-000658.png');
+  background-size: cover;
+  background-attachment: fixed; /* Makes the background image fixed */
+  background-position: center;
+  width: 100%;
+  height: 90vh; /* Adjust height as needed */
+  padding: 20px;
+}
+
+.image-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.image-column img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-column.left {
+  align-items: flex-start;
+}
+
+.image-column.right {
+  align-items: flex-end;
+}
+
+.middle-text {
+  flex: 1;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.middle-text h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  background-image: url('https://stonepedia.in/wp-content/uploads/2024/11/Screenshot-2024-11-23-000658.png');
+  background-size: cover;
+  background-attachment: fixed; /* Makes the background image fixed */
+  width: 100%;
+  height: 40vh;
+  padding: 20px;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.three-section {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: transparent;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.three-section i {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.three-section h2 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: white;
+}
+
+.three-section p {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .slider-container {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .image-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .middle-text {
+    padding: 10px;
+  }
+
+  .middle-text h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .section-container {
+    height: auto;
+  }
+
+  .three-section h2 {
+    font-size: 16px;
+  }
+
+  .three-section p {
+    font-size: 12px;
+  }
+
+  button {
+    width: 140px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    grid-template-columns: 1fr;
+  }
+
+  .middle-text h1 {
+    font-size: 1.2rem;
+  }
+
+  button {
+    width: 120px;
+    padding: 8px;
+  }
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  background-image: url('https://stonepedia.in/wp-content/uploads/2024/11/Screenshot-2024-11-23-000658.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+}
+
+.redefining {
+  color: orange;
+}
+
+.center h1 {
+  color: white;
+}
+
+.hr {
+  width: 100%;
+}
+
+.image-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  background-image: url('https://stonepedia.in/wp-content/uploads/2024/10/d7a298d507e58de3_7320-w1050-h525-b2-p0-q90-.webp');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+
+.section-container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  background-image: url('https://stonepedia.in/wp-content/uploads/2024/11/Screenshot-2024-11-23-000658.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  color: white;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 250px;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  text-align: center;
+}
+
+.rights {
+  background-color: rgb(243, 0, 170);
+  color: white;
+  padding: 13px;
+  border: none;
+  width: 170px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.rights:hover {
+  background-color: orange;
+}
+
+.text p {
+  margin: 0;
+  font-size: 13px;
+  color: white;
+}
+
+.text h2 {
+  font-size: 28px;
+  margin: 10px 0;
+  color: white;
+}
+
+.slider1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.slider-container1 {
+  width: 90%;
+  max-width: 960px; /* Centers and limits the width of the slider */
+}
+
+.slider-container1 img {
+  width: 100%; /* Makes images responsive */
+  max-width: 200px;
+  border-radius: 5px;
+  margin: auto;
+  border-radius: 50%;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .slider-container1 {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  .rights {
+    width: 140px;
+    padding: 10px;
+  }
+}
+.text .redefining{
+  color: orange;
+}
+
+/* BestSellingProducts.css */
+
+.best-selling-products {
+  text-align: center;
+  background-color: #fff;
+  padding: 50px 20px;
+}
+
+.header {
+
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-around ;
+  align-items: center;
+}
+
+.sub-title {
+  color: #f44336;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.view-more {
+  background-color: #ff007a;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.view-more:hover {
+  background-color: #ff4081;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.product-card {
+  background-color: #f9f9f9;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-image {
+  width: 50%;
+  /* height: auto; */
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-name {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #555;
+}
+
+
+
+
+.Apps {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('https://stonepedia.in/wp-content/uploads/2024/11/Screenshot-2024-11-23-000658.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+}
+
+.App {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.content {
+  /* background: rgba(0, 0, 0, 0.8); */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0.5em 0;
+}
+
+.subtitle {
+  color: #f9c74f;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.stone-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  /* gap: 20px;  */
+  justify-content: center; 
+}
+
+.stone-card {
+  text-align: center;
+  /* background: #fff; */
+  color: #000;
+  overflow: hidden;
+}
+
+.stone-card img {
+  width: 80%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.stone-card p {
+  font-size: 1.1rem;
+  padding: 10px 0;
+}
+
+.view-more-btn {
+  background: #ff0054;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.view-more-btn:hover {
+  background: #d9004a;
+}
+.norm{
+  display: flex;
+  justify-content: space-around;
+}
+.hori{
+  margin-bottom: 60px;
+}
+
+
+
+
+
+.stone-collection-container {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.stone-collection-header {
+  margin-bottom: 2rem;
+}
+
+.stone-collection-subtitle {
+  color: #f97316;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.stone-collection-title {
+  font-size: 2rem;
+  color: #333;
+}
+
+.stone-collection-button {
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.stone-grid1 {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.stone-item {
+  text-align: center;
+  background-color: #f9f9f9;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stone-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.stone-name {
+  font-size: 1rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.stone-price {
+  font-size: 0.9rem;
+  color: #555;
+}
+.subtitle1{
+  color: orange;
+}
+
+
+.counts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.main-center {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.count-item {
+  text-align: center;
+  flex: 1;
+  min-width: 150px;
+  background-color: #f7f3ed ;
+}
+
+h2 {
+  font-size: 4rem;
+  color: #333;
+}
+
+span {
+  color: #7d7979;
+  font-size: 0.9rem;
+}
+
+.countup{
+  font-size: 35px;
+}
+
+
+
+
+
+
+/* Main container */
+.news-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr; 
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 130px;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  padding-bottom: 211px;
+}
+
+.featured-by {
+  color: #ff9900;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.left-column h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.view-more-btn {
+  background-color: #ff3366;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.3s;
+}
+
+.view-more-btn:hover {
+  background-color: #ff6699;
+}
+
+/* Right column: Card Grid */
+.right-column {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.news-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.news-id {
+  color: #ff3366;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.news-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #333;
+}
+
+.news-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.read-more-btn:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .news-section {
+    grid-template-columns: 1fr; 
+  }
+
+  .right-column {
+    grid-template-columns: 1fr; 
+  }
+
+  .left-column h2 {
+
+    font-size: 28px;
+  }
+}
+
+
+
+
+
+/* General Styles */
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  color: #333;
+} */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Ensures elements wrap on smaller screens */
+}
+
+/* Left Section: Reviews */
+.left-section {
+  flex: 1;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-heading {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.main-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.reviews-scrollbar {
+  max-height: 400px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+  padding-right: 1rem;
+}
+
+.reviews-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.reviews-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.user-image {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.review-card h3{
+  color: rgb(7, 7, 7);
+}
+.slick-slide img{
+  display: inline-grid;
+}
+
+.stars {
+  color: #ffcc00;
+  font-size: 1.2rem;
+}
+
+.review-text {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.write-review-btn {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #ff01d5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.write-review-btn:hover {
+  background-color: #474849;
+}
+
+/* Right Section: Consultation */
+.right-section {
+  flex: 1;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.consultation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-group input {
+  flex: 1;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+.submit-btn {
+  padding: 0.7rem 1.5rem;
+  background-color: #ff00d0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #4c4c4c;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .left-section,
+  .right-section {
+    max-width: 100%;
+  }
+
+  .reviews-scrollbar {
+    max-height: 300px;
+  }
+
+  .form-group {
+    flex-direction: column;
+  }
+
+  .main-heading {
+    font-size: 1.5rem;
+  }
+
+  .write-review-btn,
+  .submit-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-heading {
+    font-size: 1.2rem;
+  }
+
+  .review-card {
+    margin-bottom: 1rem;
+  }
+
+  .user-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .write-review-btn,
+  .submit-btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
+
+
+
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: hidden;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.carousel-row {
+  display: flex;
+  gap: 2rem;
+  animation: moveLeft 10s linear infinite;
+}
+
+.carousel-row.reverse {
+  animation: moveRight 10s linear infinite;
+}
+
+.carousel-row img {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel-row img {
+    height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-row img {
+    height: 50px;
+  }
+}
